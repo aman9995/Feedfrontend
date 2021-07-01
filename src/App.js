@@ -10,7 +10,7 @@ import React, { useState, useEffect } from 'react';
 function App() {
   let [mylist,setmylist]=useState([])
   useEffect(()=>{
-    axios.get('https://aman-server.herokuapp.com/')
+    axios.get('https://aman-server.herokuapp.com/getalluser')
     .then(res=>{
       console.log(res);
       setmylist(res.data)
